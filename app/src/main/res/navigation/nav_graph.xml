@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/WelcomeFragment">
+
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="com.example.m05_quiz_resources.WelcomeFragment"
+        android:label="@string/start_fragment_label"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_StartFragment_to_QuestionsFragment"
+            app:destination="@id/QuestionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QuestionsFragment"
+        android:name="com.example.m05_quiz_resources.QuizFragment"
+        android:label="@string/questions_fragment_label"
+        tools:layout="@layout/fragment_quiz">
+
+        <action
+            android:id="@+id/action_QuestionsFragment_to_ResultFragment"
+            app:destination="@id/ResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.example.m05_quiz_resources.ResultFragment"
+        android:label="@string/result_fragment_label"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_ResultFragment_to_StartFragment"
+            app:destination="@id/WelcomeFragment"
+            app:popUpTo="@id/WelcomeFragment" />
+
+        <action
+            android:id="@+id/action_ResultFragment_to_QuestionsFragment"
+            app:destination="@id/QuestionsFragment"
+            app:popUpTo="@id/WelcomeFragment" />
+
+    </fragment>
+
+
+</navigation>
