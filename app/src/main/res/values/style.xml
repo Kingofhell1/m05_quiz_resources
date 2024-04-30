@@ -14,4 +14,10 @@
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/opensans_medium</item>
     </style>
+
+    <style name="questionsStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/opensans_medium</item>
+    </style>
+
 </resources>
