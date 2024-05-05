@@ -11,9 +11,8 @@
         style="@style/questionsStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/xxl_dimens"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="48dp"
         android:padding="@dimen/small_dimens"
         android:text="@string/result_title"
         app:layout_constraintRight_toRightOf="parent"
@@ -25,7 +24,6 @@
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
         android:padding="@dimen/small_dimens"
         android:text="100"
         app:layout_constraintEnd_toEndOf="@+id/resultText"
@@ -33,18 +31,32 @@
         app:layout_constraintStart_toStartOf="@+id/resultText"
         app:layout_constraintTop_toBottomOf="@+id/resultText" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star_animation"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStartAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation" />
+
     <Button
         android:id="@+id/buttonStartAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/xxl_dimens"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="144dp"
         android:padding="@dimen/small_dimens"
         android:text="@string/button_result_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result" />
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

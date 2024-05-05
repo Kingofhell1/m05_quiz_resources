@@ -1,6 +1,11 @@
 package com.example.m05_quiz_resources
 
+import android.animation.AnimatorInflater
+import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.transition.Explode
+import android.transition.Transition
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -23,6 +28,7 @@ class WelcomeFragment : Fragment() {
 
     private lateinit var binding: FragmentWelcomeBinding
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,13 +37,26 @@ class WelcomeFragment : Fragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonNext.setOnClickListener {
+
             findNavController().navigate(R.id.action_StartFragment_to_QuestionsFragment)
         }
+
+        windowTransaction()
+
     }
+
+    private fun windowTransaction(){
+        val option = Explode()
+        option.duration = resources.getInteger(android.R.integer.config_longAnimTime).toLong()
+        enterTransition = option
+        exitTransition = option
+    }
+
 
 
 }

@@ -1,6 +1,7 @@
 package com.example.m05_quiz_resources
 
 import android.os.Bundle
+import android.transition.Explode
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -46,11 +47,16 @@ class QuizFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentQuizBinding.inflate(inflater)
+
+        binding.headerQuestions.alpha = 0f
+        binding.headerQuestions.animate().apply {
+            duration = 3000
+            alpha(  1.0f)
+        }
+
         return binding.root
 
         }
-
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -60,9 +66,17 @@ class QuizFragment : Fragment() {
             val bundle = Bundle().apply {
                 putInt("correctAnswersCount", number)
             }
-            findNavController().navigate(R.id.action_QuestionsFragment_to_ResultFragment, bundle)
 
+            findNavController().navigate(R.id.action_QuestionsFragment_to_ResultFragment, bundle)
         }
+        windowTransaction()
+
+    }
+    private fun windowTransaction(){
+        val option = Explode()
+        option.duration = resources.getInteger(android.R.integer.config_longAnimTime).toLong()
+        enterTransition = option
+        exitTransition = option
     }
 
     override fun onDestroy() {
