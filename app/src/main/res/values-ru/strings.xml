@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">QUIZ</string>
     <string name="button_text">Продолжить</string>
     <string name="button_welcome_text">Начать</string>
-
-    <string name="music_quiz">MUSIC QUIZ</string>
-    <string name="image_description">welcome image</string>
+    <string name="music_quiz">МУЗЫКАЛЬНАЯ ВИКТОРИНА</string>
+    <string name="image_description">приветственное изображение</string>
     <string name="result_title">Ваш результат:</string>
 
     <string name="question_1">Сколько участников в kpop группе BTS?</string>
@@ -40,12 +40,10 @@
     <string name="answer_to_6_3">Skid Row</string>
 
     <string name="button_back">Назад</string>
-
     <string name="date_birthday">Дата рождения</string>
-    <string name="enter_title_birthday">Enter your date birthday</string>
+    <string name="enter_title_birthday">Введите ваш день рождения</string>
 
-    <string name="start_fragment_label">Start Fragment</string>
-    <string name="questions_fragment_label">Questions Fragment</string>
-    <string name="result_fragment_label">Results Fragment</string>
-
+    <string name="start_fragment_label">Начальный фрагмент</string>
+    <string name="questions_fragment_label">Фрагмент вопросов</string>
+    <string name="result_fragment_label">Фрагмент результатов</string>
 </resources>

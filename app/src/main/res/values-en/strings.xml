@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QUIZ</string>
+    <string name="button_text">Next</string>
+    <string name="music_quiz">MUSIC QUIZ</string>
+    <string name="image_description">welcome image</string>
+    <string name="button_welcome_text">Start</string>
+
+    <string name="result_title">Your result:</string>
+
+    <string name="question_1">How many members are in the kpop group BTS?</string>
+    <string name="answer_to_1_1">0</string>
+    <string name="answer_to_1_2">7</string>
+
+    <string name="question_2">What is the name of the record label chief keef-a?</string>
+    <string name="answer_to_2_1">GLO GANG</string>
+    <string name="answer_to_2_2">DRAIN GANG</string>
+
+    <string name="question_3">The real name of the artist is Blood Orange?</string>
+    <string name="answer_to_3_1">Devonté Hynes</string>
+    <string name="answer_to_3_2">Rakim Athelaston Mayers</string>
+    <string name="answer_to_3_3">Skid Row</string>
+
+    <string name="question_4">In what year was the Black Sabbath band founded?</string>
+    <string name="answer_to_4_1">1968</string>
+    <string name="answer_to_4_2">1970</string>
+    <string name="answer_to_4_3">1965</string>
+
+    <string name="button_result_text">Start over</string>
+    <string name="button_quiz_text">Send</string>
+    <string name="hello_blank_fragment">Quiz</string>
+
+    <string name="question_5">Where the AC/DC group was founded?</string>
+    <string name="answer_to_5_1">Sydney November 1973</string>
+    <string name="answer_to_5_2">Sydney November 1970</string>
+    <string name="answer_to_5_3">Wisconsin July 1980</string>
+
+    <string name="question_6">Who founded the AC/DC group?</string>
+    <string name="answer_to_6_1">brothers Malcolm and Angus Young</string>
+    <string name="answer_to_6_2">Klaus Meine</string>
+    <string name="answer_to_6_3">Skid Row</string>
+
+    <string name="button_back">Back</string>
+    <string name="date_birthday">Date Birthday</string>
+    <string name="enter_title_birthday">Enter your date birthday</string>
+
+    <string name="start_fragment_label">Start Fragment</string>
+    <string name="questions_fragment_label">Questions Fragment</string>
+    <string name="result_fragment_label">Results Fragment</string>
+</resources>
